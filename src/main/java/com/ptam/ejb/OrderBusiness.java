@@ -1,14 +1,16 @@
 package com.ptam.ejb;
 
+import com.ptam.model.Product;
+
 import java.util.List;
 
 public interface OrderBusiness {
 
-    public List<String> getProducts();
+    List<String> getProducts();
 
-    public Integer inventoryOfProduct(Integer productId);
+    Integer inventoryOfProduct(Integer productId);
 
-    public void addProductToCart(Integer productId) throws Exception;
+    void addProductToCart(Product product) throws Exception;
 
-    public void shipOrder(Integer orderId) throws Exception;
+    void shipOrder(Integer orderId) throws Exception;
 }
