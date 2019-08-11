@@ -2,6 +2,8 @@ package com.ptam.ejb;
 
 import com.ptam.model.Product;
 
+import java.time.Instant;
+import java.time.temporal.ChronoField;
 import java.util.ArrayList;
 import java.util.List;
 import org.slf4j.Logger;
@@ -57,5 +59,11 @@ public class OrderBusinessSessionEJBBean implements OrderBusiness {
 
     public void shipOrder(Integer orderId) throws Exception {
 
+    }
+
+    @Override
+    public Long getCurrentTimeStamp() {
+        Instant nowInst = Instant.now();
+        return nowInst.toEpochMilli();
     }
 }

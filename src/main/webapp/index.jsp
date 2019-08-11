@@ -28,6 +28,12 @@
         out.print("<TR><td>"+name+"</td></TR>");
     }
     out.print("</Table>");
+
+    out.print("<br>");
+
+    Long lg = orderbusiness.getCurrentTimeStamp();
+    out.print(lg);
+
 %>
 
 </body>

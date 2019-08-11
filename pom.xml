@@ -61,10 +61,10 @@
             <artifactId>maven-war-plugin</artifactId>
             <version>3.2.3</version>
             <configuration>
-                <webXml>WebContent\WEB-INF\web.xml</webXml>
+                <webXml>src\main\webapp\WEB-INF\web.xml</webXml>
                 <webResources>
                     <resource>
-                        <directory>${project.basedir}\WebContent\WEB-INF</directory>
+                        <directory>${project.basedir}\src\main\webapp\WEB-INF</directory>
                         <filtering>true</filtering>
                         <targetPath>WEB-INF</targetPath>
                         <includes>
@@ -72,9 +72,9 @@
                         </includes>
                     </resource>
                     <resource>
-                        <directory>${project.basedir}\WebContent\WEB-INF\jsp</directory>
+                        <directory>${project.basedir}\src\main\webapp</directory>
                         <filtering>true</filtering>
-                        <targetPath>WEB-INF\jsp</targetPath>
+                        <targetPath>WEB-INF\</targetPath>
                         <includes>
                             <include>**/*.jsp</include>
                         </includes>

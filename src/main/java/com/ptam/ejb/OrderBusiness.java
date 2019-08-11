@@ -13,4 +13,7 @@ public interface OrderBusiness {
     void addProductToCart(Product product) throws Exception;
 
     void shipOrder(Integer orderId) throws Exception;
+
+    Long getCurrentTimeStamp();
+
 }
