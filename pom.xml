@@ -103,6 +103,11 @@
                         <cargo.hostname>localhost</cargo.hostname>
                         <cargo.rmi.port>1099</cargo.rmi.port>
                     </properties>
+                    <type>runtime</type>
+                    <properties>
+                        <cargo.hostname>production27</cargo.hostname>
+                        <cargo.jboss.management-native.port>19999</cargo.jboss.management-native.port>
+                    </properties>
                 </configuration>
             </configuration>
             <dependencies>
